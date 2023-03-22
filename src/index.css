@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --scg-color-bg-primary: #FFF;
+  --scg-color-bg-secondary: #315fd3;
+
+  --scg-color-font-primary: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+html,
+body {
+  background-color: var(--scg-color-bg-primary);
+}
+
+.scg-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
