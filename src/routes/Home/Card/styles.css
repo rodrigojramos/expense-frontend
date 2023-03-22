@@ -1,0 +1,12 @@
+.scg-card-container {
+    margin-top: 50px;
+    background-color: var(--scg-color-bg-secondary);
+    height: 500px;
+    border-radius: 32px;
+    padding: 10px 30px;
+}
+
+.scg-card-container h2 {
+    color: var(--scg-color-font-primary);
+    font-size: 20px;
+}
