@@ -1,3 +1,4 @@
+import ButtonAdd from '../../../components/ButtonAdd';
 import ExpenseCard from '../../../components/ExpenseCard';
 import SearchBar from '../../../components/SearchBar';
 import TotalCard from '../../../components/TotalCard';
@@ -19,6 +20,9 @@ export default function ExpensesListing() {
                     </div>
                     <div>
                         <TotalCard />
+                    </div>
+                    <div>
+                        <ButtonAdd />
                     </div>
                 </div>
             </section>

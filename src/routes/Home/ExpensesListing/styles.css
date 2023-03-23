@@ -7,7 +7,7 @@
 
 .scg-expense-container h2 {
     color: var(--scg-color-font-primary);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .scg-title-list {
@@ -15,6 +15,14 @@
     padding: 0 10px;
     background-color: var(--scg-color-bg-secondary);
     display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 576px) {
+    .scg-title-list {
+        justify-content: left;
+        font-size: 20px;
+    }
 }

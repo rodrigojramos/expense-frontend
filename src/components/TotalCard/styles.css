@@ -3,11 +3,22 @@
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: right;
-    padding-right: 100px;
+    justify-content: center;
     border-radius: 0px 0px 10px 10px;
 }
 
 .scg-total-container h2 {
+    font-size: 16px;
     color: var(--scg-color-font-primary);
+}
+
+@media (min-width: 576px) {
+    .scg-total-container {
+        justify-content: right;
+        padding-right: 100px;
+    }
+
+    .scg-total-container h2 {
+        font-size: 20px;
+    }
 }
