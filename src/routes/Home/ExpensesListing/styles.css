@@ -1,0 +1,11 @@
+.scg-expense-container {
+    margin-top: 50px;
+    height: 500px;
+    border-radius: 32px;
+    padding: 10px 30px;
+}
+
+.scg-expense-container h2 {
+    color: var(--scg-color-font-tertiary);
+    font-size: 20px;
+}

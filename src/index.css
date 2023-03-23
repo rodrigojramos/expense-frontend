@@ -2,14 +2,19 @@
 
 :root {
   --scg-color-bg-primary: #FFF;
-  --scg-color-bg-secondary: #315fd3;
+  --scg-color-bg-secondary: #291662;
   --scg-color-bg-tertiary:#e8e8e8;
+  --scg-color-bg-quartiary: #bfdcec;
 
   --scg-color-font-primary: #FFF;
   --scg-color-font-secondary: #636363;
   --scg-color-font-placeholder: #d9d9d9;
+  --scg-color-font-tertiary: #291662;
 
   --scg-searchBar-border: #d9d9d9;
+  --scg-table-border: #d9d9d9;
+
+  --scg-color-bg-sadsadadndary: #315fd3;
 }
 
 * {
@@ -27,7 +32,7 @@ a:hover {
 
 html,
 body {
-  background-color: var(--scg-color-bg-primary);
+  background-color: var(--scg-color-bg-quartiary);
 }
 
 .scg-container {

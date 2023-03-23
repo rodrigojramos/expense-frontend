@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
-import Card from "./routes/Home/Card";
-
+import ExpensesListing from "./routes/Home/ExpensesListing";
 
 export default function App() {
 
@@ -10,7 +9,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}>
-          <Route index element={<Card />} />
+          <Route index element={<ExpensesListing />} />
           </Route>
         </Routes>
       </BrowserRouter>
