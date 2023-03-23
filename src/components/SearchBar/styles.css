@@ -2,7 +2,11 @@
     height: 30px;
     display: flex;
     color: var(--scg-color-bg-tertiary);
-    margin: 10px 0;
+  }
+
+  .scg-bg-search-bar {
+    height: 40px;
+    background-color: var(--scg-color-bg-secondary);  
   }
   
   .dsc-search-bar button, .dsc-search-bar input {
@@ -34,10 +38,8 @@
   
   .dsc-search-bar button[type="submit"] {
     border-right: none;
-    border-radius: 4px 0 0 4px;
   }
   
   .dsc-search-bar button[type="reset"] {
     border-left: none;
-    border-radius: 0 4px 4px 0;
   }

@@ -8,7 +8,7 @@ export default function ExpensesListing() {
         <main>
             <section className="scg-container">
                 <div className="scg-expense-container">
-                    <div>
+                    <div className="scg-title-list">
                         <h2>Despesas</h2>
                     </div>
                     <div>

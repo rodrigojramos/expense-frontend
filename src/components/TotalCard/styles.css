@@ -1,0 +1,13 @@
+.scg-total-container {
+    background-color: var(--scg-color-bg-secondary);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 100px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.scg-total-container h2 {
+    color: var(--scg-color-font-primary);
+}

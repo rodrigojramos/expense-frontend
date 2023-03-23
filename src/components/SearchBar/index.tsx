@@ -10,14 +10,16 @@ export default function SearchBar() {
     }
 
     return(
-        <form className="dsc-search-bar">
-            <button type="submit">🔎︎</button>
-            <input 
-                value={text}
-                type="text" 
-                placeholder="Descrição da despesa"
-                onChange={handleChange} />
-            <button>🗙</button>
-        </form>
+        <div className="scg-bg-search-bar">
+            <form className="dsc-search-bar">
+                <button type="submit">🔎︎</button>
+                <input 
+                    value={text}
+                    type="text" 
+                    placeholder="Descrição da despesa"
+                    onChange={handleChange} />
+                <button className="scg-border-side">🗙</button>
+            </form>
+        </div>
     );
 }

@@ -6,6 +6,15 @@
 }
 
 .scg-expense-container h2 {
-    color: var(--scg-color-font-tertiary);
+    color: var(--scg-color-font-primary);
     font-size: 20px;
+}
+
+.scg-title-list {
+    height: 60px;
+    padding: 0 10px;
+    background-color: var(--scg-color-bg-secondary);
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
 }

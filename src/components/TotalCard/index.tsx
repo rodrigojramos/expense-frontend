@@ -2,6 +2,8 @@ import './styles.css';
 
 export default function TotalCard() {
     return(
-        <h2>Total:</h2>
+        <div className="scg-container scg-total-container">
+            <h2>Total: R$ 5000.00</h2>
+        </div>
     );
 }
