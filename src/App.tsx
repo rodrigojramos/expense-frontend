@@ -8,7 +8,7 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
+          <Route path="/expenses" element={<Home />}>
           <Route index element={<ExpensesListing />} />
           </Route>
         </Routes>
