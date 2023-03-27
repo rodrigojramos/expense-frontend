@@ -6,6 +6,7 @@ import GearIcon from '../../../assets/settings.png';
 import { useEffect, useState } from 'react';
 import { ExpenseDTO } from '../../../models/expense';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function ExpensesListing() {
 
@@ -57,7 +58,9 @@ export default function ExpensesListing() {
                         <TotalCard />
                     </div>
                     <div>
-                        <ButtonAdd />
+                        <Link to="/expenses/form">
+                            <ButtonAdd />
+                        </Link>
                     </div>
                 </div>
             </section>
