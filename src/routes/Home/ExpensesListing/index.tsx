@@ -5,19 +5,25 @@ import './styles.css';
 import GearIcon from '../../../assets/settings.png';
 import { useEffect, useState } from 'react';
 import { ExpenseDTO } from '../../../models/expense';
-import axios from 'axios';
+import * as expenseService from "../../../services/expense-service";
 import { Link } from 'react-router-dom';
 
 export default function ExpensesListing() {
 
     const [expenses, setExpenses] = useState<ExpenseDTO[]>([]);
 
+    const [expenseDescription, setExpenseDescription] = useState("");
+
     useEffect(() => {
-        axios.get("http://localhost:8080/expenses")
+        expenseService.findExpensesRequest(expenseDescription)
             .then(response => {
                 setExpenses(response.data.content);
             })
-    }, [])
+    }, [expenseDescription])
+
+    function handleSearch(searchText: string) {
+        setExpenseDescription(searchText);
+    }
 
     return(
         <main>
@@ -27,7 +33,7 @@ export default function ExpensesListing() {
                         <h2>Despesas</h2>
                     </div>
                     <div>
-                        <SearchBar />
+                        <SearchBar onSearch={handleSearch} />
                     </div>
                     <div>
                         <table className="scg-table">
